@@ -10,7 +10,7 @@ module.exports = async function (context, req) {
     
     var assert = require('assert');
     var ObjectId = require('mongodb').ObjectID;
-    var url = ''; // update me
+    var url = 'mongodb://abdulbasit:bREtudFd0INhBkKuZgatmSPbOuY75XAFv1SgvRfiIiHXBlkFfwVVZIo9ntRB2PNeCQfIOWQyCCba9D4gfYo8Tw%3D%3D@abdulbasit.documents.azure.com:10255/?ssl=true';
     
     const ForeignKey = 'AdminUserId'
     const PrimaryTable = 'Users'
@@ -21,12 +21,12 @@ module.exports = async function (context, req) {
     {
        authentication: {
            options: {
-               userName: '', // update me
-               password: '' // update me
+               userName: 'sqladmin', // update me
+               password: 'qaz@1234' // update me
            },
            type: 'default'
        },
-       server: '', // update me
+       server: 'sqlnosql.database.windows.net', // update me
        options:
        {
            database: 'sqldb', //update me
