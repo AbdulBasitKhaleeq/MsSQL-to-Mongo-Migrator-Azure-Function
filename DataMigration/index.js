@@ -10,7 +10,7 @@ module.exports = async function (context, req) {
     
     var assert = require('assert');
     var ObjectId = require('mongodb').ObjectID;
-    var url = 'mongodb://abdulbasit:bREtudFd0INhBkKuZgatmSPbOuY75XAFv1SgvRfiIiHXBlkFfwVVZIo9ntRB2PNeCQfIOWQyCCba9D4gfYo8Tw%3D%3D@abdulbasit.documents.azure.com:10255/?ssl=true';
+    var url = '';
     
     const ForeignKey = 'AdminUserId'
     const PrimaryTable = 'Users'
