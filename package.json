@@ -1,8 +1,12 @@
 {
   "name": "test-abc123",
   "version": "1.0.0",
-  "description": "",
+  "description": "Azure Function for SQL to Mongo",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AbdulBasitKhaleeq/sampleAzureFunc"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

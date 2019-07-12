@@ -34,6 +34,11 @@ module.exports = async function (context, req) {
        }
     }
     
+
+    /**
+     * Documentation
+     * @param {String} Query : sql query for mssql server 
+     */
     function GetTableData(Query){
         return new Promise(async (resolve, reject) => {
             var con = new msSqlConnecter.msSqlConnecter(config); 
@@ -51,7 +56,9 @@ module.exports = async function (context, req) {
         })
     }
     
-    
+    /**
+     * Joins one to many relationship to document embedding nosql
+     */
     function DataJoin(){
         return new Promise(async (resolve) => { 
             ColumnHeaders = []
@@ -72,6 +79,9 @@ module.exports = async function (context, req) {
         })
     }
     
+    /**
+     * 
+     */
     MongoClient.connect(url, (err, client) => {
         
         console.log('Connected to MongoDb');
